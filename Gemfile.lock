@@ -150,6 +150,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   heroku
   jquery-rails
+  less-rails
   less-rails-bootstrap
   rails (= 3.2.1)
   rspec

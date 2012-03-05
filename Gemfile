@@ -8,6 +8,7 @@ gem 'rails', '3.2.1'
 gem 'sqlite3'
 
 gem 'less-rails-bootstrap'
+gem 'less-rails'
 
 gem 'heroku'
 

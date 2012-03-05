@@ -5,11 +5,20 @@ gem 'rails', '3.2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+gem 'sqlite3'
 
 gem 'less-rails-bootstrap'
 
 gem 'heroku'
+
+group :development do
+	gem 'rspec-rails'
+end
+
+group :test do
+	gem 'rspec'
+	gem 'webrat'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.

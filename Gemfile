@@ -7,12 +7,6 @@ gem 'rails', '3.2.1'
 
 gem 'pg'
 
-gem 'refinerycms', '~> 2.0.0'
-
-group :development, :test do
-       gem 'sqlite3'
-end
-
 gem 'less-rails-bootstrap'
 
 gem 'heroku'

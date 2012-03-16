@@ -1,0 +1,12 @@
+March 16:
+
+added "config.new_page_parts = true" to pages.rb in the refinery
+initializers folder. this allows a new section to be created within
+pages. Don't know if this will be necessary or not for this project, but
+useful to know!
+
+useful railscast:http://railscasts.com/episodes/332-refinery-cms-basics?view=comments
+
+rake refinery:override view=refinery/...  (_heaader, _footer, _menu, etc)
+rake refinery:override view=refinery/layouts/application
+to start "theming"

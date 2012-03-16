@@ -1,3 +1,7 @@
 /*
 *= require twitter/bootstrap
 */
+
+h1 a:hover {
+ text-decoration:none;
+ }

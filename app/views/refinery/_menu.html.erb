@@ -6,15 +6,26 @@
     css = [(css || 'menu clearfix')].flatten.join(' ')
     hide_children = Refinery::Core.menu_hide_children if hide_children.nil?
 -%>
-<nav id='<%= dom_id %>' class='<%= css %>'>
-  <ul>
-    <%= render :partial => '/refinery/menu_branch', :collection => roots,
-               :locals => {
+
+	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	</a>
+	
+   <div class="nav-collapse collapse">
+	
+<!-- <nav id='<%= dom_id %>' class='<%= css %>'> -->
+
+    <ul class="nav">
+      <%= render :partial => '/refinery/menu_branch', :collection => roots,
+                 :locals => {
                  :hide_children => hide_children,
                  :sibling_count => (roots.length - 1),
                  :menu_levels => local_assigns[:menu_levels],
                  :apply_css => true #if you don't care about class='first' class='last' or class='selected' set apply_css to false for speed.
                } -%>
-  </ul>
-</nav>
+    </ul>
+   </div>
+
 <% end -%>

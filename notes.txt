@@ -9,4 +9,19 @@ useful railscast:http://railscasts.com/episodes/332-refinery-cms-basics?view=com
 
 rake refinery:override view=refinery/...  (_heaader, _footer, _menu, etc)
 rake refinery:override view=refinery/layouts/application
+rake refinery:override view=refinery/_content_page
 to start "theming"
+
+Weird issue with original home page not populatingcorrectly, so strange css classes kept coming up. Should have changed after overriding Show.html.erb, but didn't. Works fine on newly created pages.
+
+Next, change the home page!!
+
+March 17
+
+Did it!
+
+Also, wanted to make the logo stick on the side, sort of like the twitter bootstrap responsive page. Finally got it to work using the following:
+<%= link_to image_tag("blue_door_logo.png"), refinery.root_path %>
+the image being the first bit, and the link to the refinery root path the second (duh). It's not "sticky" (fixed) but I think will look cool as should take up the top part of the screen on a mobile. 
+
+Shall I try pushing to Heroku?

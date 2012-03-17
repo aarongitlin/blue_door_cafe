@@ -3,15 +3,16 @@
   <% site_bar = render('/refinery/site_bar', :head => true) -%>
   <%= render '/refinery/head' %>
   <body>
-    <%= site_bar -%>
+   <!-- <%= site_bar -%> -->
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
-    <div class="container-fluid">
+    
       <div class="navbar navbar-fixed-top">
       	<div class="navbar-inner">
         <%= render '/refinery/header' -%>
         </div>
-      </div>
-      <div class="row-fluid">
+        </div>
+      <div class="container-fluid">
+
         <%= yield %>
       </div>
       <footer>

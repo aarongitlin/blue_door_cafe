@@ -25,3 +25,5 @@ Also, wanted to make the logo stick on the side, sort of like the twitter bootst
 the image being the first bit, and the link to the refinery root path the second (duh). It's not "sticky" (fixed) but I think will look cool as should take up the top part of the screen on a mobile. 
 
 Shall I try pushing to Heroku?
+
+ok deployed on heroku and seems to work fine, except for the home page thing! How did I fix it before? I think i just redid the databases which seemed to do the trick. Tried doing that in heroku but didn't quite work. Maybe they're not working totally correctly (precompile assets stuff?) will work on next.

@@ -17,6 +17,10 @@ color: white;
     margin-top:0;
     padding-top:0;
     background-color:rgba(15,79,138,0.85);
+    background-image:none;
+    }
+.nav-collapse.in {
+    height:auto !important;
     }
 .navbar .nav > li > a {
     padding-top:25px;

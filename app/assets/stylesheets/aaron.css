@@ -12,28 +12,13 @@ font-weight: 200;
 line-height: 1;
 color: white;
 }
-body {
-padding-top:80px;
-}
- .navbar-inner{
-     background:rgba(15,79,138,0.85);
-     padding-top:20px;
-     margin-bottom:10px;
-     }
-.navbar {
-    margin-bottom:10px;
+
+.navbar-inner{
+    margin-top:0;
+    padding-top:0;
     }
-.row-fluid {
-    width:85%
-    }
-.well {
-    border:none;
-    background:none;
-    box-shadow:none;
-    background-repeat:no-repeat;
-    }
-.navbar-inner .container-fluid {
-    padding-left:240px;
+.navbar .nav > li > a {
+    padding-top:25px;
     }
 .navbar .nav > li > a {
     color:white;
@@ -42,3 +27,7 @@ padding-top:80px;
     background-color:white;
     color:rgba(15,79,138,0.85);
     }
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+    background-color:white;
+    color:rgba(15,79,138,0.85);
+}

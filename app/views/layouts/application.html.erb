@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <%= render '/refinery/html_tag' %>
-  <% site_bar = render('/refinery/site_bar', :head => true) -%>
+  <% site_bar = render('/refinery/site_bar', :locals => {:head => true}) -%>
   <%= render '/refinery/head' %>
   <body>
    <!-- <%= site_bar -%> -->
@@ -14,10 +14,11 @@
       <div class="container-fluid">
 
         <%= yield %>
-      </div>
-      <footer>
+        <footer>
         <%= render '/refinery/footer' -%>
       </footer>
+      </div>
+      
     </div>
     <%= render '/refinery/javascripts' %>
   </body>

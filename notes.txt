@@ -27,3 +27,9 @@ the image being the first bit, and the link to the refinery root path the second
 Shall I try pushing to Heroku?
 
 ok deployed on heroku and seems to work fine, except for the home page thing! How did I fix it before? I think i just redid the databases which seemed to do the trick. Tried doing that in heroku but didn't quite work. Maybe they're not working totally correctly (precompile assets stuff?) will work on next.
+
+March22
+
+Got javascript going! Super easy, just called it in at the end after overriding the javascript for refinery.
+
+Finally managed to change the "selected" class to "active" to better fit with bootstrap. Followed setup on this page: https://gist.github.com/1804715, specifically change the application_helper to setup a custom css, and then call that custom css in the menu_branch erb. The actual coding is beyond me at this point, but was successfully able to copy and paste correctly enough. I just don't understand rails/ruby syntax well enough!

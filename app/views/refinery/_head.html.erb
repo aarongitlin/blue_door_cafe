@@ -8,7 +8,17 @@
   <%= csrf_meta_tags if Refinery::Core.authenticity_token_on_frontend -%>
   <%= yield :meta %>
 
-  <%= stylesheet_link_tag "formatting", "theme","bootstrap","bootstrap-responsive", "aaron" %>
+  <%= stylesheet_link_tag "formatting", "theme","bootstrap" %>
+  <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    <%= stylesheet_link_tag "bootstrap-responsive", "aaron" %>
   <%= stylesheet_link_tag "home" if home_page? %>
   <%= yield :stylesheets %>
 

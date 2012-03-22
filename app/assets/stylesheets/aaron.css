@@ -16,6 +16,7 @@ color: white;
 .navbar-inner{
     margin-top:0;
     padding-top:0;
+    background-color:rgba(15,79,138,0.85);
     }
 .navbar .nav > li > a {
     padding-top:25px;

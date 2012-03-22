@@ -9,7 +9,7 @@ gem 'pg'
 
 gem 'sass-rails',   '~> 3.2.3'
 
-gem 'refinerycms-inquiries', '~> 2.0.0'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -27,9 +27,10 @@ end
 
 gem 'jquery-rails'
 
-gem 'refinerycms', '= 2.0.0'
+gem 'refinerycms', '= 2.0.1'
 
 gem 'refinerycms-i18n', '~> 2.0.0'
+gem 'refinerycms-inquiries'
 
 gem 'less-rails'
 gem 'less-rails-bootstrap'

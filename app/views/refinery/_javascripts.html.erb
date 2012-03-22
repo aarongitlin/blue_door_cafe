@@ -1,8 +1,8 @@
 <%= yield :before_javascript_libraries -%>
-<%= javascript_include_tag 'bootstrap' %>
 <%= yield :javascript_libraries %>
-
 <%= yield :after_javascript_libraries %>
+
+
 <% if request.env['HTTP_USER_AGENT'] =~ /MSIE/ %>
   <!--[if lt IE 7 ]>
     <%= javascript_include_tag 'dd_belatedpng' %>

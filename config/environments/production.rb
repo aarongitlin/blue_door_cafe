@@ -68,4 +68,17 @@ BlueDoorCafe::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+  
+  config.action_mailer.raise_delivery_errors = true
+
+ActionMailer::Base.default :from => 'aaron@andrewsand.co'
+ActionMailer::Base.smtp_settings = {
+  :address        => 'smtp.sendgrid.net',
+  :port           => '587',
+  :authentication => :plain,
+  :user_name      => ENV['app3133271@heroku.com'],
+  :password       => ENV['2rzmomww'],
+  :domain         => ENV['heroku.com']
+}
+ActionMailer::Base.delivery_method = :smtp
 end

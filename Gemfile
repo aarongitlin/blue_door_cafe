@@ -8,25 +8,6 @@ gem 'rails', '3.2.1'
 gem 'pg'
 
 gem 'sass-rails',   '~> 3.2.3'
-
-
-
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  
-  gem 'coffee-rails', '~> 3.2.1'
-
-
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer'
-
-  gem 'uglifier', '>= 1.0.3'
-end
-
-gem 'jquery-rails'
-
 gem 'refinerycms', '= 2.0.1'
 
 gem 'refinerycms-i18n', '~> 2.0.0'
@@ -34,6 +15,25 @@ gem 'refinerycms-inquiries'
 
 gem 'less-rails'
 gem 'less-rails-bootstrap'
+ gem 'coffee-rails', '~> 3.2.1'
+gem 'uglifier', '>= 1.0.3'
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  
+ 
+
+
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer'
+
+  
+end
+
+gem 'jquery-rails'
+
+
 
 group :development, :test do
          gem 'sqlite3'
